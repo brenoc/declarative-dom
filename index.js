@@ -1,6 +1,9 @@
 function createElement(tagName) {
+  // That's ugly, but that's how Babel handles default parameters
   const _props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   const children = arguments[2]
+
+  // That's ugly, but that's how Babel handles rest parameters
   const className = _props.className
   const htmlFor = _props.htmlFor
   const props = _objectWithoutProperties(_props, ['className', 'htmlFor'])
