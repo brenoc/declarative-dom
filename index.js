@@ -8,7 +8,7 @@ function createElement(tagName) {
   const htmlFor = _props.htmlFor
   const props = _objectWithoutProperties(_props, ['className', 'htmlFor'])
 
-  let element = document.createElement(tagName)
+  const element = document.createElement(tagName)
 
   const childrenElements = getChildren(children)
 
@@ -24,7 +24,7 @@ function createElement(tagName) {
     element.setAttribute('class', className)
   }
 
-  element = addAttributesAndHandlers(element, props)
+  addAttributesAndHandlers(element, props)
 
   return element
 }
@@ -62,8 +62,6 @@ function addAttributesAndHandlers(element, props) {
     
     element.setAttribute(prop, props[prop])
   }
-
-  return element
 }
 
 function isHandlerFunction(prop) {
