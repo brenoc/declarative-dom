@@ -1,0 +1,24 @@
+{
+  "name": "declarative-dom",
+  "version": "0.1.0",
+  "description": "A DOM library to declarative build UIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenoc/declarative-dom.git"
+  },
+  "keywords": [
+    "declarative",
+    "dom",
+    "ui"
+  ],
+  "author": "Breno Calazans (brenocalazans@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brenoc/declarative-dom/issues"
+  },
+  "homepage": "https://github.com/brenoc/declarative-dom#readme"
+}
